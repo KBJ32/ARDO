@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
-
+// THIS IS A COMMENT
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link AboutUs#newInstance} factory method to
