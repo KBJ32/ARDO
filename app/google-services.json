@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "493907329867",
+    "project_id": "ardo-2c5f5",
+    "storage_bucket": "ardo-2c5f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493907329867:android:23dfb90c42428d7a9adece",
+        "android_client_info": {
+          "package_name": "com.example.ardo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493907329867-nm024405lnonod1ft0ei4p0p69snftst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2tdohWWH9KydTpbdOLqPWh2ycbb2yY8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493907329867-nm024405lnonod1ft0ei4p0p69snftst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

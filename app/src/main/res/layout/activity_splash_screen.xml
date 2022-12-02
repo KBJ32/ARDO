@@ -6,6 +6,7 @@
     android:background="@drawable/background"
     tools:context=".SplashScreen">
 
+
     <ImageView
         android:id="@+id/appsplash"
         android:layout_width="130dp"

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs"
+    android:background="@drawable/background">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABOUT US"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#000"
+        android:id="@+id/contentHead"
+        android:paddingVertical="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="25dp"
+        android:id="@+id/contentText"
+        android:layout_below="@id/contentHead"
+        android:text="ARDO organization aims at providing care and nurtures to the patients by organizing awareness camps, diagnosis tests, physiotherapy treatment, distributing them wheelchairs and nutritious food . ARDO is very proactive to do things for development of society as much as possible .By not just limiting to its core activities where it believes helping each other and everyone would entirely make the world a better place to live in.
+
+The main focus of ARDO is on the people who suffering with a rare disease called “Muscular Dystrophy”. Muscular Dystrophy is a genetic disease that causes progressive weakness and loss of muscle mass and there is no medicinal cure for this disease . In addition to this there may arise other complications like affecting kidneys, heart , lungs and eventually leads to death of the person.
+
+In the wake of Covid-19, ARDO has been very active in organizing food distribution drive and providing food to the homeless destitute by associating with City Police Department. It has also distributed sanitizers and other essentials to the police department."
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:lineHeight="20dp"
+        android:layout_marginTop="22dp"/>
+
+
+
+</RelativeLayout>
