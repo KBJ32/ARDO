@@ -2,23 +2,14 @@ package com.example.ardo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -31,16 +22,12 @@ public class RegisterActivity extends AppCompatActivity {
     Button btn;
 
 
-    private static final String TAG = "TAG";
+
     EditText inputName,inputEmail, inputPassword, inputConfirmPassword;
-    String email,password, name;
     Button btnRegister;
     TextView existingUser;
     FirebaseDatabase database;
     DatabaseReference reference;
-
-    FirebaseAuth fAuth;
-    FirebaseUser fUser;
 
 //    private FirebaseDatabase db = FirebaseDatabase.getInstance();
 //    private DatabaseReference root = db.getReference().child("Users");
@@ -84,26 +71,6 @@ public class RegisterActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        fUser= fAuth.getCurrentUser();
-                        fUser.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void unused) {
-                                Toast.makeText(RegisterActivity.this,"successful",Toast.LENGTH_SHORT).show();
-                            }
-                        }).addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Log.d(TAG,"OnFailure: Email not sent" + e.getMessage());
-                            }
-                        });
-
-
-
-                    }
-                });
 
                 database = FirebaseDatabase.getInstance();
                 reference = database.getReference("users");
@@ -119,6 +86,13 @@ public class RegisterActivity extends AppCompatActivity {
                 Toast.makeText(RegisterActivity.this, "Registration", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(RegisterActivity.this, loginActivity.class);
                 startActivity(intent);
+
+                if (Name.isEmpty() || Email.isEmpty() || Password.isEmpty() || ConfirmPassword.isEmpty()){
+                    Toast.makeText(RegisterActivity.this, "Fill all the fields",Toast.LENGTH_SHORT).show();
+                }
+                else if(!ConfirmPassword.equals(Password)){
+                    Toast.makeText(RegisterActivity.this, "Passwords don't match",Toast.LENGTH_SHORT).show();
+                }
 
             }
         });

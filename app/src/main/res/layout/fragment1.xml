@@ -48,86 +48,57 @@
 <!--            app:layout_constraintTop_toTopOf="parent"-->
 <!--            app:layout_constraintVertical_bias="0.976" />-->
 
-    <!--    <Button-->
-    <!--        android:id="@+id/button3"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="Button"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.671"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:layout_constraintVertical_bias="0.976" />-->
+<!--        <Button-->
+<!--            android:id="@+id/button3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Button"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.671"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.976" />-->
 
-    <!--    <Button-->
-    <!--        android:id="@+id/button4"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="Button"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.996"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:layout_constraintVertical_bias="0.976" />-->
+<!--        <Button-->
+<!--            android:id="@+id/button4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Button"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.996"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.976" />-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/contentHead"
-        android:text="ARDO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="30sp"
         android:paddingVertical="20dp"
-        android:textColor="#fff"/>
+        android:text="ARDO"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+
+<!--    <com.google.android.material.tabs.TabItem-->
+<!--        android:id="@+id/Overview"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Home" />-->
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="25dp"
-        android:id="@+id/contentText"
-        android:layout_below="@id/contentHead"
-        android:text="ARDO is currently handling about 300 people of all ages, out of which most of them belong to families which are already fighting poverty."
-        android:textSize="18sp"
-        android:textColor="#fff"
-        android:lineHeight="25dp"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/contentText"
-        android:paddingVertical="30dp"
-        android:gravity="center">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Block 1"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="#fff"
-            android:paddingHorizontal="20dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Block 2"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="#fff"
-            android:paddingHorizontal="20dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Block 3"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="#fff"
-            android:paddingHorizontal="20dp"/>
-
-
-    </LinearLayout>
-
+        android:text="Home"
+        android:id="@+id/O"/>
 
 
 </RelativeLayout>

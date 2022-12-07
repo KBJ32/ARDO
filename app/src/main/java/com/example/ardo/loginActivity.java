@@ -38,7 +38,7 @@ public class loginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!validateEmail() | !validatePassword()){
+                if(!validateEmail() || !validatePassword()){
 
                 }else{
                     checkUser();
@@ -91,9 +91,9 @@ public class loginActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()){
                     inputEmail.setError(null);
-                    String passwordfromDB = snapshot.child(userEmail).child("password").getValue(String.class);
+                    final String getpassword = snapshot.child(userEmail).child("password").getValue(String.class);
 
-                    if(!Objects.equals(passwordfromDB, userPassword)){
+                    if(!Objects.equals(editPassword, userPassword)){
                         inputEmail.setError(null);
                         Intent intent = new Intent(loginActivity.this, MainActivity.class);
                         startActivity(intent);
