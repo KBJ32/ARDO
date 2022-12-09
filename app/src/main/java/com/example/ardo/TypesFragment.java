@@ -9,10 +9,10 @@ import androidx.fragment.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link GalleryFragment#newInstance} factory method to
+ * Use the {@link TypesFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class GalleryFragment extends Fragment {
+public class TypesFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,7 +23,7 @@ public class GalleryFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public GalleryFragment() {
+    public TypesFragment() {
         // Required empty public constructor
     }
 
@@ -36,8 +36,8 @@ public class GalleryFragment extends Fragment {
      * @return A new instance of fragment GalleryFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static GalleryFragment newInstance(String param1, String param2) {
-        GalleryFragment fragment = new GalleryFragment();
+    public static TypesFragment newInstance(String param1, String param2) {
+        TypesFragment fragment = new TypesFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -58,6 +58,6 @@ public class GalleryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_gallery, container, false);
+        return inflater.inflate(R.layout.fragment_types, container, false);
     }
 }

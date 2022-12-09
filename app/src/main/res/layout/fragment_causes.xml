@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutFragment"
+    tools:context=".CausesFragment"
     android:background="@drawable/background">
 
 
@@ -20,21 +20,19 @@
         android:paddingVertical="20dp"/>
 
     <TextView
+        android:id="@+id/contentText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="25dp"
-        android:id="@+id/contentText"
-        android:layout_margin="100dp"
-        android:layout_marginBottom="100dp"
         android:layout_below="@id/contentHead"
+        android:lineHeight="20dp"
+        android:paddingHorizontal="25dp"
         android:text="ARDO aims at providing care and nurtures to the patients by organizing awareness camps, diagnosis tests, physiotherapy treatment, distributing them wheelchairs and nutritious food . ARDO is very proactive to do things for development of society as much as possible .By not just limiting to its core activities where it believes helping each other and everyone would entirely make the world a better place to live in.
 
 The main focus of ARDO is on the people who suffering with a rare disease called “Muscular Dystrophy”. Muscular Dystrophy is a genetic disease that causes progressive weakness and loss of muscle mass and there is no medicinal cure for this disease . In addition to this there may arise other complications like affecting kidneys, heart , lungs and eventually leads to death of the person.
 
 In the wake of Covid-19, ARDO has been very active in organizing food distribution drive and providing food to the homeless destitute by associating with City Police Department. It has also distributed sanitizers and other essentials to the police department."
-        android:textSize="19sp"
         android:textColor="#fff"
-        android:lineHeight="20dp"
-        android:layout_marginTop="22dp"/>
+        android:layout_marginTop="100dp"
+        android:textSize="19sp" />
 
 </FrameLayout>

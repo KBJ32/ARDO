@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_home:
                         fragment = new HomeFragment();
                         break;
-                    case R.id.nav_gallery:
-                        fragment = new GalleryFragment();
+                    case R.id.nav_types:
+                        fragment = new TypesFragment();
                         break;
-                    case R.id.nav_about:
-                        fragment = new AboutFragment();
+                    case R.id.nav_causes:
+                        fragment = new CausesFragment();
                         break;
-                    case R.id.nav_camera:
-                        fragment = new CameraFragment();
+                    case R.id.nav_diagnosis:
+                        fragment = new DiagnosisFragment();
                         break;
                 }
 

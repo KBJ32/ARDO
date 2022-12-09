@@ -10,30 +10,87 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:paddingVertical="20dp"
-        android:text="@string/app_name"
-        android:textColor="#fff"
+        android:text="OVERVIEW"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/contentHead"
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <!--    <ImageView-->
-    <!--        android:id="@+id/imageView"-->
-    <!--        android:layout_width="200dp"-->
-    <!--        android:layout_height="200dp"-->
-    <!--        android:layout_margin="@android:dimen/app_icon_size"-->
-    <!--        android:layout_marginTop="32dp"-->
-    <!--        android:layout_marginBottom="483dp"-->
-    <!--        android:foreground="@drawable/applogo"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        android:layout_centerInParent="true">-->
+    <TextView
+        android:id="@+id/contentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentHead"
+        android:lineHeight="20dp"
+        android:paddingHorizontal="25dp"
+        android:text="The muscular dystrophies (MD) are a group of inherited genetic conditions that gradually cause the muscles to weaken, leading to an increasing level of disability.
 
-    <!--    </ImageView>-->
+MD is a progressive condition, which means it gets worse over time. It often begins by affecting a particular group of muscles, before affecting the muscles more widely.
+
+Some types of MD eventually affect the heart or the muscles used for breathing, at which point the condition becomes life-threatening.
+
+There's no cure for MD, but treatment can help to manage many of the symptoms."
+        android:textColor="#000"
+        android:layout_marginTop="100dp"
+        android:textSize="19sp"
+        android:textStyle="italic"/>
+
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="232dp"
+        android:text="Types"/>
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="485dp"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="232dp"
+        android:text="Causes" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="540dp"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="232dp"
+        android:text="Diagnosis" />
+
+
+
+
+
+
+
+
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_margin="@android:dimen/app_icon_size"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:layout_marginBottom="483dp"-->
+<!--            android:foreground="@drawable/applogo"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:layout_centerInParent="true">-->
+
+<!--        </ImageView>-->
 
 
     <!--        <Button-->

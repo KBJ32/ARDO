@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    tools:showIn="bottom_navigation_view">
 
     <group android:checkableBehavior="single">
 
@@ -10,17 +10,17 @@
             android:icon="@drawable/ic_home"
             android:title="Home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_types"
+            android:icon="@drawable/ic_search"
+            android:title="Types" />
         <item
-            android:id="@+id/nav_about"
-            android:icon="@drawable/ic_about"
-            android:title="About" />
+            android:id="@+id/nav_causes"
+            android:icon="@drawable/ic_sick"
+            android:title="Causes" />
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_camera"
-            android:title="Camera"/>
+            android:id="@+id/nav_diagnosis"
+            android:icon="@drawable/ic_baseline_security"
+            android:title="Diagnosis"/>
     </group>
 
 </menu>
