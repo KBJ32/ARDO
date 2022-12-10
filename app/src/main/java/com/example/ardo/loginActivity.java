@@ -83,7 +83,7 @@ public class loginActivity extends AppCompatActivity {
         String userEmail = inputEmail.getText().toString().trim();
         String userPassword = editPassword.getText().toString().trim();
 
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users");
         Query checkUserDatabase = reference.orderByChild("email").equalTo(userEmail);
 
         checkUserDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -91,11 +91,16 @@ public class loginActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()){
                     inputEmail.setError(null);
-                    final String getpassword = snapshot.child(userEmail).child("password").getValue(String.class);
 
-                    if(!Objects.equals(editPassword, userPassword)){
+//                    DataSnapshot userEmailDS = snapshot.child(userEmail);
+
+                    DataSnapshot userPasswordDS = snapshot.child("password");
+
+                    final String getpassword = userPasswordDS.getValue(String.class);
+
+                    if(!Objects.equals(getpassword, userPassword)){
                         inputEmail.setError(null);
-                        Intent intent = new Intent(loginActivity.this, MainActivity.class);
+                        Intent intent = new Intent(loginActivity.this, Mainpageafterlogin.class);
                         startActivity(intent);
                     } else{
                         editPassword.setError("Invalid Credentials");

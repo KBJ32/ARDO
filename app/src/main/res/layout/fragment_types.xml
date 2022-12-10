@@ -1,19 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TypesFragment"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:paddingHorizontal="20dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:paddingVertical="20dp"
-        android:text="Gallery"
+        android:text="TYPES"
+        android:id="@+id/title"
         android:textColor="#fff"
         android:textSize="30sp"
         android:textStyle="bold" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:src="@drawable/types"
+        android:id="@+id/types"
+        android:layout_below="@+id/title"/>
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/types"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="
+There are 9 types of muscular dystrophy, with each type involving an eventual loss of Strength, Increasing Disability, and possible deformity. The most well known of the muscular dystrophies is Duchenne Muscular Dystrophy (DMD), followed by Becker muscular dystrophy (BMD)."
+            android:textSize="18dp"/>
+
+
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="types"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

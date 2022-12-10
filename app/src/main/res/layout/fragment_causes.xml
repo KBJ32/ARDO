@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ABOUT"
+        android:text="CAUSES"
         android:gravity="center"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -26,11 +26,8 @@
         android:layout_below="@id/contentHead"
         android:lineHeight="20dp"
         android:paddingHorizontal="25dp"
-        android:text="ARDO aims at providing care and nurtures to the patients by organizing awareness camps, diagnosis tests, physiotherapy treatment, distributing them wheelchairs and nutritious food . ARDO is very proactive to do things for development of society as much as possible .By not just limiting to its core activities where it believes helping each other and everyone would entirely make the world a better place to live in.
-
-The main focus of ARDO is on the people who suffering with a rare disease called “Muscular Dystrophy”. Muscular Dystrophy is a genetic disease that causes progressive weakness and loss of muscle mass and there is no medicinal cure for this disease . In addition to this there may arise other complications like affecting kidneys, heart , lungs and eventually leads to death of the person.
-
-In the wake of Covid-19, ARDO has been very active in organizing food distribution drive and providing food to the homeless destitute by associating with City Police Department. It has also distributed sanitizers and other essentials to the police department."
+        android:text="
+In most cases, Muscular Dystrophy (MD) runs in families. It usually develops after inheriting a faulty gene from one or both parents. MD is caused by mutations (alterations) in the genes responsible for healthy muscle structure and function."
         android:textColor="#fff"
         android:layout_marginTop="100dp"
         android:textSize="19sp" />
