@@ -44,14 +44,15 @@ There's no cure for MD, but treatment can help to manage many of the symptoms."
         android:layout_height="wrap_content"/>
 
 
-<!--    <Button-->
+    <Button
 
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="430dp"-->
-<!--        android:background="@drawable/btn_bg"-->
-<!--        android:layout_marginLeft="232dp"-->
-<!--        android:text="Types"/>-->
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="530dp"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="162dp"
+        android:text="Logout"
+        android:id="@+id/Logout1"/>
 
 <!--    <Button-->
 

@@ -1,11 +1,17 @@
 package com.example.ardo;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
+
+import com.google.firebase.auth.FirebaseAuth;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -13,6 +19,8 @@ import androidx.fragment.app.Fragment;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
+
+    Button btn;
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -56,12 +64,30 @@ public class HomeFragment extends Fragment {
         }
     }
 
+    Activity context;
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
 
+        context = getActivity();
+        return inflater.inflate(R.layout.fragment_home, container, false);
+    }
+    public void onStart(){
+        super.onStart();
+        Button btn=(Button) context.findViewById(R.id.Logout1);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent= new Intent(context, loginActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+
+            }
+        });
     }
 
 

@@ -2,14 +2,9 @@ package com.example.ardo;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.FrameLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -20,7 +15,7 @@ public class Mainpageafterlogin extends AppCompatActivity {
     HomeFragment homeFragment = new HomeFragment();
     TypesFragment typesFragment = new TypesFragment();
     CausesFragment causesFragment=new CausesFragment();
-    FrameLayout frameLayout;
+//    FrameLayout frameLayout;
 
 
     @SuppressLint("MissingInflatedId")
@@ -30,7 +25,7 @@ public class Mainpageafterlogin extends AppCompatActivity {
         setContentView(R.layout.activity_mainpageafterlogin);
 
         nav = findViewById(R.id.nav);
-        frameLayout = findViewById(R.id.Logout);
+//        frameLayout = findViewById(R.id.Logout);
         getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
 
         nav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -55,21 +50,21 @@ public class Mainpageafterlogin extends AppCompatActivity {
 
 
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.options_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId()==R.id.Logout){
-            Fragment fragmentlogout = new LogoutFragment();
-            FragmentTransaction transactionlogout = getSupportFragmentManager().beginTransaction();
-            transactionlogout.replace(R.id.container, fragmentlogout);
-            transactionlogout.commit();
-        }
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.options_menu, menu);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        if (item.getItemId()==R.id.Logout){
+//            Fragment fragmentlogout = new LogoutFragment();
+//            FragmentTransaction transactionlogout = getSupportFragmentManager().beginTransaction();
+//            transactionlogout.replace(R.id.container, fragmentlogout);
+//            transactionlogout.commit();
+//        }
+//        return true;
+//    }
 }
