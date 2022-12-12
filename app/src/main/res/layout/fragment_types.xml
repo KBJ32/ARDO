@@ -38,10 +38,11 @@ There are 9 types of muscular dystrophy, with each type involving an eventual lo
             android:textSize="18dp"/>
 
 
-        <TextView
+        <ListView
             android:layout_width="175dp"
             android:layout_height="wrap_content"
-            android:text="types"/>
+            android:divider="@color/white"
+            android:dividerHeight="1dp" />
 
 
     </LinearLayout>

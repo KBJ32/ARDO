@@ -39,33 +39,37 @@ There's no cure for MD, but treatment can help to manage many of the symptoms."
         android:textSize="19sp"
         android:textStyle="italic"/>
 
-
-    <Button
-
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="430dp"
-        android:background="@drawable/btn_bg"
-        android:layout_marginLeft="232dp"
-        android:text="Types"/>
+        android:layout_height="wrap_content"/>
 
-    <Button
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="485dp"
-        android:background="@drawable/btn_bg"
-        android:layout_marginLeft="232dp"
-        android:text="Causes" />
+<!--    <Button-->
 
-    <Button
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="430dp"-->
+<!--        android:background="@drawable/btn_bg"-->
+<!--        android:layout_marginLeft="232dp"-->
+<!--        android:text="Types"/>-->
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="540dp"
-        android:background="@drawable/btn_bg"
-        android:layout_marginLeft="232dp"
-        android:text="Diagnosis" />
+<!--    <Button-->
+
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="485dp"-->
+<!--        android:background="@drawable/btn_bg"-->
+<!--        android:layout_marginLeft="232dp"-->
+<!--        android:text="Causes" />-->
+
+<!--    <Button-->
+
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="540dp"-->
+<!--        android:background="@drawable/btn_bg"-->
+<!--        android:layout_marginLeft="232dp"-->
+<!--        android:text="Diagnosis" />-->
 
 
 
