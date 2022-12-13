@@ -27,14 +27,14 @@
         android:layout_below="@id/contentHead"
         android:lineHeight="20dp"
         android:paddingHorizontal="25dp"
-        android:text="The muscular dystrophies (MD) are a group of inherited genetic conditions that gradually cause the muscles to weaken, leading to an increasing level of disability.
+        android:text="The Muscular Dystrophies (MD) are a group of inherited genetic conditions that gradually cause the muscles to weaken, leading to an increasing level of disability.
 
 MD is a progressive condition, which means it gets worse over time. It often begins by affecting a particular group of muscles, before affecting the muscles more widely.
 
 Some types of MD eventually affect the heart or the muscles used for breathing, at which point the condition becomes life-threatening.
 
 There's no cure for MD, but treatment can help to manage many of the symptoms."
-        android:textColor="#000"
+        android:textColor="#040300"
         android:layout_marginTop="100dp"
         android:textSize="19sp"
         android:textStyle="italic"/>

@@ -12,9 +12,9 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:paddingVertical="20dp"
-        android:text="TYPES"
+        android:text="TYPES :"
         android:id="@+id/title"
-        android:textColor="#fff"
+        android:textColor="#FFC107"
         android:textSize="30sp"
         android:textStyle="bold" />
     <ImageView
@@ -33,17 +33,19 @@
         <TextView
             android:layout_width="175dp"
             android:layout_height="wrap_content"
-            android:text="
-There are 9 types of muscular dystrophy, with each type involving an eventual loss of Strength, Increasing Disability, and possible deformity. The most well known of the muscular dystrophies is Duchenne Muscular Dystrophy (DMD), followed by Becker muscular dystrophy (BMD)."
-            android:textSize="18dp"/>
+            android:text="There are 9 types of muscular dystrophy, with each type involving an eventual loss of Strength, Increasing Disability, and possible deformity. The most well known of the muscular dystrophies is Duchenne Muscular Dystrophy (DMD), followed by Becker muscular dystrophy (BMD)."
+            android:textSize="18dp"
+            android:textColor="#231A1A"/>
 
 
-        <ListView
+<!--        <ListView-->
+<!--            android:layout_width="175dp"-->
+<!--            android:layout_height="wrap_content" />-->
+
+        <ImageView
             android:layout_width="175dp"
-            android:layout_height="wrap_content"
-            android:divider="@color/white"
-            android:dividerHeight="1dp" />
-
+            android:layout_height="323dp"
+            android:src="@drawable/types1" />
 
     </LinearLayout>
 
