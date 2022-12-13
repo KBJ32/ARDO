@@ -40,8 +40,10 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/Causes"
-            android:paddingTop="175dp"/>
+            android:src = "@drawable/causes"
+            android:paddingTop="175dp">
+
+        </ImageView>
 
 
 
